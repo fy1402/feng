@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21CE24D81CDB153700524F3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CE24D71CDB153700524F3E /* AppDelegate.swift */; };
+		21CE24DA1CDB153700524F3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CE24D91CDB153700524F3E /* ViewController.swift */; };
+		21CE24DD1CDB153700524F3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21CE24DB1CDB153700524F3E /* Main.storyboard */; };
+		21CE24DF1CDB153700524F3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21CE24DE1CDB153700524F3E /* Assets.xcassets */; };
+		21CE24E21CDB153700524F3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21CE24E01CDB153700524F3E /* LaunchScreen.storyboard */; };
+		21CE24ED1CDB153700524F3E /* SimpleProgressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CE24EC1CDB153700524F3E /* SimpleProgressTests.swift */; };
+		21CE24F81CDB153700524F3E /* SimpleProgressUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CE24F71CDB153700524F3E /* SimpleProgressUITests.swift */; };
+		21CE25061CDB155900524F3E /* ProgressBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CE25051CDB155900524F3E /* ProgressBarViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21CE24E91CDB153700524F3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21CE24CC1CDB153700524F3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21CE24D31CDB153700524F3E;
+			remoteInfo = SimpleProgress;
+		};
+		21CE24F41CDB153700524F3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21CE24CC1CDB153700524F3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21CE24D31CDB153700524F3E;
+			remoteInfo = SimpleProgress;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		21CE24D41CDB153700524F3E /* SimpleProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21CE24D71CDB153700524F3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		21CE24D91CDB153700524F3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		21CE24DC1CDB153700524F3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		21CE24DE1CDB153700524F3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21CE24E11CDB153700524F3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		21CE24E31CDB153700524F3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21CE24E81CDB153700524F3E /* SimpleProgressTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleProgressTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21CE24EC1CDB153700524F3E /* SimpleProgressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleProgressTests.swift; sourceTree = "<group>"; };
+		21CE24EE1CDB153700524F3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21CE24F31CDB153700524F3E /* SimpleProgressUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleProgressUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21CE24F71CDB153700524F3E /* SimpleProgressUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleProgressUITests.swift; sourceTree = "<group>"; };
+		21CE24F91CDB153700524F3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21CE25051CDB155900524F3E /* ProgressBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBarViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21CE24D11CDB153700524F3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21CE24E51CDB153700524F3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21CE24F01CDB153700524F3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21CE24CB1CDB153700524F3E = {
+			isa = PBXGroup;
+			children = (
+				21CE24D61CDB153700524F3E /* SimpleProgress */,
+				21CE24EB1CDB153700524F3E /* SimpleProgressTests */,
+				21CE24F61CDB153700524F3E /* SimpleProgressUITests */,
+				21CE24D51CDB153700524F3E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		21CE24D51CDB153700524F3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21CE24D41CDB153700524F3E /* SimpleProgress.app */,
+				21CE24E81CDB153700524F3E /* SimpleProgressTests.xctest */,
+				21CE24F31CDB153700524F3E /* SimpleProgressUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21CE24D61CDB153700524F3E /* SimpleProgress */ = {
+			isa = PBXGroup;
+			children = (
+				21CE24D71CDB153700524F3E /* AppDelegate.swift */,
+				21CE24D91CDB153700524F3E /* ViewController.swift */,
+				21CE25051CDB155900524F3E /* ProgressBarViewController.swift */,
+				21CE24DB1CDB153700524F3E /* Main.storyboard */,
+				21CE24DE1CDB153700524F3E /* Assets.xcassets */,
+				21CE24E01CDB153700524F3E /* LaunchScreen.storyboard */,
+				21CE24E31CDB153700524F3E /* Info.plist */,
+			);
+			path = SimpleProgress;
+			sourceTree = "<group>";
+		};
+		21CE24EB1CDB153700524F3E /* SimpleProgressTests */ = {
+			isa = PBXGroup;
+			children = (
+				21CE24EC1CDB153700524F3E /* SimpleProgressTests.swift */,
+				21CE24EE1CDB153700524F3E /* Info.plist */,
+			);
+			path = SimpleProgressTests;
+			sourceTree = "<group>";
+		};
+		21CE24F61CDB153700524F3E /* SimpleProgressUITests */ = {
+			isa = PBXGroup;
+			children = (
+				21CE24F71CDB153700524F3E /* SimpleProgressUITests.swift */,
+				21CE24F91CDB153700524F3E /* Info.plist */,
+			);
+			path = SimpleProgressUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21CE24D31CDB153700524F3E /* SimpleProgress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21CE24FC1CDB153700524F3E /* Build configuration list for PBXNativeTarget "SimpleProgress" */;
+			buildPhases = (
+				21CE24D01CDB153700524F3E /* Sources */,
+				21CE24D11CDB153700524F3E /* Frameworks */,
+				21CE24D21CDB153700524F3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleProgress;
+			productName = SimpleProgress;
+			productReference = 21CE24D41CDB153700524F3E /* SimpleProgress.app */;
+			productType = "com.apple.product-type.application";
+		};
+		21CE24E71CDB153700524F3E /* SimpleProgressTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21CE24FF1CDB153700524F3E /* Build configuration list for PBXNativeTarget "SimpleProgressTests" */;
+			buildPhases = (
+				21CE24E41CDB153700524F3E /* Sources */,
+				21CE24E51CDB153700524F3E /* Frameworks */,
+				21CE24E61CDB153700524F3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21CE24EA1CDB153700524F3E /* PBXTargetDependency */,
+			);
+			name = SimpleProgressTests;
+			productName = SimpleProgressTests;
+			productReference = 21CE24E81CDB153700524F3E /* SimpleProgressTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		21CE24F21CDB153700524F3E /* SimpleProgressUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21CE25021CDB153700524F3E /* Build configuration list for PBXNativeTarget "SimpleProgressUITests" */;
+			buildPhases = (
+				21CE24EF1CDB153700524F3E /* Sources */,
+				21CE24F01CDB153700524F3E /* Frameworks */,
+				21CE24F11CDB153700524F3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21CE24F51CDB153700524F3E /* PBXTargetDependency */,
+			);
+			name = SimpleProgressUITests;
+			productName = SimpleProgressUITests;
+			productReference = 21CE24F31CDB153700524F3E /* SimpleProgressUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21CE24CC1CDB153700524F3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Feng;
+				TargetAttributes = {
+					21CE24D31CDB153700524F3E = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 978KGC2P9J;
+					};
+					21CE24E71CDB153700524F3E = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 978KGC2P9J;
+						TestTargetID = 21CE24D31CDB153700524F3E;
+					};
+					21CE24F21CDB153700524F3E = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 978KGC2P9J;
+						TestTargetID = 21CE24D31CDB153700524F3E;
+					};
+				};
+			};
+			buildConfigurationList = 21CE24CF1CDB153700524F3E /* Build configuration list for PBXProject "SimpleProgress" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21CE24CB1CDB153700524F3E;
+			productRefGroup = 21CE24D51CDB153700524F3E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21CE24D31CDB153700524F3E /* SimpleProgress */,
+				21CE24E71CDB153700524F3E /* SimpleProgressTests */,
+				21CE24F21CDB153700524F3E /* SimpleProgressUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21CE24D21CDB153700524F3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21CE24E21CDB153700524F3E /* LaunchScreen.storyboard in Resources */,
+				21CE24DF1CDB153700524F3E /* Assets.xcassets in Resources */,
+				21CE24DD1CDB153700524F3E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21CE24E61CDB153700524F3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21CE24F11CDB153700524F3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21CE24D01CDB153700524F3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21CE24DA1CDB153700524F3E /* ViewController.swift in Sources */,
+				21CE25061CDB155900524F3E /* ProgressBarViewController.swift in Sources */,
+				21CE24D81CDB153700524F3E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21CE24E41CDB153700524F3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21CE24ED1CDB153700524F3E /* SimpleProgressTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21CE24EF1CDB153700524F3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21CE24F81CDB153700524F3E /* SimpleProgressUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21CE24EA1CDB153700524F3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21CE24D31CDB153700524F3E /* SimpleProgress */;
+			targetProxy = 21CE24E91CDB153700524F3E /* PBXContainerItemProxy */;
+		};
+		21CE24F51CDB153700524F3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21CE24D31CDB153700524F3E /* SimpleProgress */;
+			targetProxy = 21CE24F41CDB153700524F3E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		21CE24DB1CDB153700524F3E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21CE24DC1CDB153700524F3E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		21CE24E01CDB153700524F3E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21CE24E11CDB153700524F3E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21CE24FA1CDB153700524F3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		21CE24FB1CDB153700524F3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21CE24FD1CDB153700524F3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SimpleProgress/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com..SimpleProgress;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		21CE24FE1CDB153700524F3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SimpleProgress/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com..SimpleProgress;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		21CE25001CDB153700524F3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SimpleProgressTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com..SimpleProgressTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleProgress.app/SimpleProgress";
+			};
+			name = Debug;
+		};
+		21CE25011CDB153700524F3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SimpleProgressTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com..SimpleProgressTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleProgress.app/SimpleProgress";
+			};
+			name = Release;
+		};
+		21CE25031CDB153700524F3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SimpleProgressUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com..SimpleProgressUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SimpleProgress;
+			};
+			name = Debug;
+		};
+		21CE25041CDB153700524F3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SimpleProgressUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com..SimpleProgressUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SimpleProgress;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21CE24CF1CDB153700524F3E /* Build configuration list for PBXProject "SimpleProgress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21CE24FA1CDB153700524F3E /* Debug */,
+				21CE24FB1CDB153700524F3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21CE24FC1CDB153700524F3E /* Build configuration list for PBXNativeTarget "SimpleProgress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21CE24FD1CDB153700524F3E /* Debug */,
+				21CE24FE1CDB153700524F3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		21CE24FF1CDB153700524F3E /* Build configuration list for PBXNativeTarget "SimpleProgressTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21CE25001CDB153700524F3E /* Debug */,
+				21CE25011CDB153700524F3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		21CE25021CDB153700524F3E /* Build configuration list for PBXNativeTarget "SimpleProgressUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21CE25031CDB153700524F3E /* Debug */,
+				21CE25041CDB153700524F3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21CE24CC1CDB153700524F3E /* Project object */;
+}
