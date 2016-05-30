@@ -13,32 +13,45 @@ class CABasicAnimationViewController: UIViewController {
     var i: Int = 0
     var j: Int = 0
     
-    var view1: UIImageView?
-    var view2: UIImageView?
+//    var view1: UIImageView?
+//    var view2: UIImageView?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor()
-        createBtn("横移")  //UIView
-        createBtn("缩小")  //CALayer放大缩小
-        createBtn("移动")  //CALayer
-        createBtn("路径")  //贝塞尔曲线
-        createBtn("xixi")  //
-        createBtn("more")  // 多步骤动画
-        createBtn("圆")  // 绕圆周运动
-        
-        self.view1 = setView()
-        self.view2 = setView()
+        setCABasicAnimation(setView())   //方大缩小
+        circularMotion(setView1())       //绕圆旋转
+//        setBasicAnimation(setView())
+//        moveViewCABasicAnimation(setView())
+//        pathCABasicAnimation(setView())
+//        byValueBasicAnimation(setView(), view2: setView())
+//        timeFun(setView())
     }
     
     func setView() -> UIImageView{
-        let view: UIImageView = UIImageView(frame: CGRectMake(10, 100 * CGFloat(j) + 100 , 50, 50))
+        let view: UIImageView = UIImageView(frame: CGRectMake(200, 200 , 20, 20))
         view.backgroundColor = Tool().arcColor()
+        Tool().roundOut(view)
         self.view.addSubview(view)
-        j += 1
         return view
     }
+    
+    func setView1() -> UIImageView{
+        let view: UIImageView = UIImageView(frame: CGRectMake(205, 205, 10, 10))
+        view.backgroundColor = Tool().arcColor()
+        Tool().roundOut(view)
+        self.view.addSubview(view)
+        return view
+    }
+    
+    func setView2() -> UIImageView{
+        let view: UIImageView = UIImageView(frame: CGRectMake(100, 100 * CGFloat(j) + 100 , 50, 50))
+        view.backgroundColor = Tool().arcColor()
+        self.view.addSubview(view)
+        return view
+    }
+    
     func createBtn(title: String) -> UIButton {
         let btn: UIButton?
         var k: CGFloat = 0
@@ -63,7 +76,7 @@ class CABasicAnimationViewController: UIViewController {
     func setCABasicAnimation(view: UIImageView?)  {
         let animation = CABasicAnimation.init()
         animation.keyPath = "transform.scale"
-        animation.repeatCount = 1
+        animation.repeatCount = HUGE
         animation.autoreverses = true
         animation.fromValue = NSNumber.init(float: 1)
         animation.toValue = NSNumber.init(float: 2.2)
@@ -76,6 +89,7 @@ class CABasicAnimationViewController: UIViewController {
         let animation = CABasicAnimation.init(keyPath: "transform.translation")
         animation.toValue = NSValue(CGPoint: CGPoint(x: 50, y: 50))
         animation.removedOnCompletion = false
+        animation.repeatCount = 100
         animation.fillMode = kCAFillModeForwards
         view!.layer.addAnimation(animation, forKey: "transform.translation")
     }
@@ -113,7 +127,7 @@ class CABasicAnimationViewController: UIViewController {
 //        CGPathAddCurveToPoint(path, nil, 200, 300, 300, 400, 200, 300)
         animation.path = path
         animation.duration = 10
-        animation.repeatCount = 1
+        animation.repeatCount = 100
         view!.layer.addAnimation(animation, forKey: "position")
         //    [keyyanimation setPath:path];
         //    [keyyanimation setDuration:1];//时间
@@ -127,6 +141,7 @@ class CABasicAnimationViewController: UIViewController {
         let animation = CABasicAnimation(keyPath: "position")
         animation.byValue = "378"
         animation.duration = 150
+        animation.repeatCount = 100
         view.layer.addAnimation(animation, forKey: "position")
         view.layer.position = CGPointMake(255, 61)
         
@@ -148,11 +163,12 @@ class CABasicAnimationViewController: UIViewController {
     
 //    圆周运动
     func circularMotion(view: UIImageView) {
-        let boundingRect = CGRectMake(-150, -150, 300, 300);
-        
+        let boundingRect = CGRectMake(-50, -50, 100, 100);
+        //前两个参数控制中心点偏移位置（偏移点受圆周大小控制  一半）  ---->  个人理解
+        //后两个参数控制圆周运动的大小
         let animation = CAKeyframeAnimation(keyPath: "position")
         animation.path = CGPathCreateWithEllipseInRect(boundingRect, nil)
-        animation.duration = 4
+        animation.duration = 1
         animation.additive = true
         animation.repeatCount = HUGE
         animation.calculationMode = kCAAnimationPaced  //无视所有已设置的keyTime
@@ -167,6 +183,7 @@ class CABasicAnimationViewController: UIViewController {
         animation.fromValue = 25;
         animation.toValue = 250
         animation.duration = 1
+        animation.repeatCount = 100
 //        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionDefault)
         animation.timingFunction = CAMediaTimingFunction(controlPoints: 0.5, 0, 0.9, 0.7)
 //        CAMediaTimingFunction(controlPoints: <#T##Float#>, <#T##c1y: Float##Float#>, <#T##c2x: Float##Float#>, <#T##c2y: Float##Float#>)
@@ -191,20 +208,20 @@ class CABasicAnimationViewController: UIViewController {
     func setAnimation(button: UIButton?) {
         //最基础的动画效果
         if button?.tag == 0 {
-            setBasicAnimation(view1)
+            setBasicAnimation(setView())
         } else if button?.tag == 1 {
-            setCABasicAnimation(view1)
+            setCABasicAnimation(setView())
         } else if button?.tag == 2 {
-            moveViewCABasicAnimation(view1)
+            moveViewCABasicAnimation(setView())
         } else if button?.tag == 3 {
-            pathCABasicAnimation(view1)
+            pathCABasicAnimation(setView())
         } else if button?.tag == 4 {
-            byValueBasicAnimation(view1!, view2: view2!)
+            byValueBasicAnimation(setView(), view2: setView())
         } else if button?.tag == 5 {
 //            moreAnimation(view1!)
-            timeFun(view1!)
+            timeFun(setView())
         } else if button?.tag == 6 {
-            circularMotion(view1!)
+            circularMotion(setView())
         }
     }
 
