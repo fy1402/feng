@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         createBtn("CABasicAnimation")
         createBtn("划线")
+        createBtn("启动页动画")
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,6 +45,8 @@ class ViewController: UIViewController {
             let cabasicVC = CABasicAnimationViewController()
             cabasicVC.title = "CABasicAnimation"
             self.navigationController?.pushViewController(cabasicVC, animated: true)
+        } else if button?.tag == 3 {
+            self.navigationController?.pushViewController(AnimationViewController(), animated: true)
         }
     }
 

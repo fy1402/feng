@@ -17,6 +17,16 @@
 		2110C11D1CF2D51200D9EC19 /* CABasicAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2110C11C1CF2D51200D9EC19 /* CABasicAnimationViewController.swift */; };
 		2110C11F1CF2DB4500D9EC19 /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2110C11E1CF2DB4500D9EC19 /* Tool.swift */; };
 		218CED851CF3FD3F007BD152 /* PointLineSurfaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218CED841CF3FD3F007BD152 /* PointLineSurfaceViewController.swift */; };
+		21F05D151D17924900B2545B /* CAViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F05D141D17924900B2545B /* CAViewController1.swift */; };
+		21F05D171D17928E00B2545B /* CAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F05D161D17928E00B2545B /* CAView.swift */; };
+		21F05D1A1D1794E600B2545B /* CircleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F05D191D1794E600B2545B /* CircleLayer.swift */; };
+		21F05D1C1D17956A00B2545B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F05D1B1D17956A00B2545B /* Extension.swift */; };
+		21F05D1E1D17CA1100B2545B /* TriangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F05D1D1D17CA1100B2545B /* TriangleLayer.swift */; };
+		21F05D201D17CD5100B2545B /* RectangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F05D1F1D17CD5100B2545B /* RectangleLayer.swift */; };
+		21F05D221D17CD9E00B2545B /* WaveLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F05D211D17CD9E00B2545B /* WaveLayer.swift */; };
+		21F05D251D17D42400B2545B /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F05D241D17D42400B2545B /* AnimationViewController.swift */; };
+		21F05D271D17D43A00B2545B /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F05D261D17D43A00B2545B /* AnimationView.swift */; };
+		21F05D291D17D50B00B2545B /* CircleLayer1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F05D281D17D50B00B2545B /* CircleLayer1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +63,16 @@
 		2110C11C1CF2D51200D9EC19 /* CABasicAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CABasicAnimationViewController.swift; sourceTree = "<group>"; };
 		2110C11E1CF2DB4500D9EC19 /* Tool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
 		218CED841CF3FD3F007BD152 /* PointLineSurfaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointLineSurfaceViewController.swift; sourceTree = "<group>"; };
+		21F05D141D17924900B2545B /* CAViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAViewController1.swift; sourceTree = "<group>"; };
+		21F05D161D17928E00B2545B /* CAView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAView.swift; sourceTree = "<group>"; };
+		21F05D191D1794E600B2545B /* CircleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleLayer.swift; sourceTree = "<group>"; };
+		21F05D1B1D17956A00B2545B /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		21F05D1D1D17CA1100B2545B /* TriangleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleLayer.swift; sourceTree = "<group>"; };
+		21F05D1F1D17CD5100B2545B /* RectangleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleLayer.swift; sourceTree = "<group>"; };
+		21F05D211D17CD9E00B2545B /* WaveLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveLayer.swift; sourceTree = "<group>"; };
+		21F05D241D17D42400B2545B /* AnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		21F05D261D17D43A00B2545B /* AnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
+		21F05D281D17D50B00B2545B /* CircleLayer1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleLayer1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +126,11 @@
 				2110C0EE1CF2D42600D9EC19 /* AppDelegate.swift */,
 				2110C0F01CF2D42600D9EC19 /* ViewController.swift */,
 				2110C11C1CF2D51200D9EC19 /* CABasicAnimationViewController.swift */,
+				21F05D141D17924900B2545B /* CAViewController1.swift */,
+				21F05D241D17D42400B2545B /* AnimationViewController.swift */,
+				21F05D161D17928E00B2545B /* CAView.swift */,
+				21F05D231D17D40A00B2545B /* AnimationView */,
+				21F05D181D1794B500B2545B /* CAView */,
 				218CED841CF3FD3F007BD152 /* PointLineSurfaceViewController.swift */,
 				2110C11E1CF2DB4500D9EC19 /* Tool.swift */,
 				2110C0F21CF2D42600D9EC19 /* Main.storyboard */,
@@ -132,6 +157,27 @@
 				2110C1101CF2D42600D9EC19 /* Info.plist */,
 			);
 			path = CoreAnimaionUITests;
+			sourceTree = "<group>";
+		};
+		21F05D181D1794B500B2545B /* CAView */ = {
+			isa = PBXGroup;
+			children = (
+				21F05D191D1794E600B2545B /* CircleLayer.swift */,
+				21F05D1D1D17CA1100B2545B /* TriangleLayer.swift */,
+				21F05D1F1D17CD5100B2545B /* RectangleLayer.swift */,
+				21F05D211D17CD9E00B2545B /* WaveLayer.swift */,
+				21F05D1B1D17956A00B2545B /* Extension.swift */,
+			);
+			path = CAView;
+			sourceTree = "<group>";
+		};
+		21F05D231D17D40A00B2545B /* AnimationView */ = {
+			isa = PBXGroup;
+			children = (
+				21F05D261D17D43A00B2545B /* AnimationView.swift */,
+				21F05D281D17D50B00B2545B /* CircleLayer1.swift */,
+			);
+			path = AnimationView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,9 +315,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				2110C0F11CF2D42600D9EC19 /* ViewController.swift in Sources */,
+				21F05D1E1D17CA1100B2545B /* TriangleLayer.swift in Sources */,
 				2110C11D1CF2D51200D9EC19 /* CABasicAnimationViewController.swift in Sources */,
 				218CED851CF3FD3F007BD152 /* PointLineSurfaceViewController.swift in Sources */,
+				21F05D201D17CD5100B2545B /* RectangleLayer.swift in Sources */,
+				21F05D1A1D1794E600B2545B /* CircleLayer.swift in Sources */,
 				2110C0EF1CF2D42600D9EC19 /* AppDelegate.swift in Sources */,
+				21F05D151D17924900B2545B /* CAViewController1.swift in Sources */,
+				21F05D1C1D17956A00B2545B /* Extension.swift in Sources */,
+				21F05D171D17928E00B2545B /* CAView.swift in Sources */,
+				21F05D251D17D42400B2545B /* AnimationViewController.swift in Sources */,
+				21F05D271D17D43A00B2545B /* AnimationView.swift in Sources */,
+				21F05D221D17CD9E00B2545B /* WaveLayer.swift in Sources */,
+				21F05D291D17D50B00B2545B /* CircleLayer1.swift in Sources */,
 				2110C11F1CF2DB4500D9EC19 /* Tool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

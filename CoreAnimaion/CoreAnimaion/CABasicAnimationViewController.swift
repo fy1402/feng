@@ -20,7 +20,7 @@ class CABasicAnimationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor()
-        setCABasicAnimation(setView())   //方大缩小
+        setCABasicAnimation(setView())   //放大缩小
         circularMotion(setView1())       //绕圆旋转
 //        setBasicAnimation(setView())
 //        moveViewCABasicAnimation(setView())
